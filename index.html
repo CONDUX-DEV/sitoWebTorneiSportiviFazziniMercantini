@@ -11,76 +11,119 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="icon" type="image/x-icon" href="./assets/media/favicon.ico">   
+
+    <style>
+      /* Reset di base e impostazioni globali */
+      html, body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Montserrat', sans-serif;
+        background-color: #2b2b2b;
+        color: #fff;
+      }
+      /* Navbar compatta */
+      .navbar {
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        min-height: 3.5rem;
+        padding: 0.5rem 1rem;
+      }
+      .navbar-brand {
+        font-weight: 600;
+        letter-spacing: 0.5px;
+      }
+      .navbar-nav .nav-link {
+        margin: 0 0.5rem;
+      }
+      /* Hero Section */
+      .hero-section {
+        min-height: 85vh; /* altezza sufficiente per dare risalto */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 2rem 1rem;
+      }
+      .hero-section .display-4 {
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+      .hero-section .lead {
+        font-size: 1.1rem;
+        max-width: 600px;
+        margin: 1rem auto 2rem;
+      }
+      .hero-section .btn {
+        margin: 0.5rem;
+      }
+      /* Footer */
+      .footer {
+        background-color: #1f1f1f;
+        padding: 1.5rem 0;
+        box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3);
+      }
+      .footer p {
+        margin: 0.3rem 0;
+      }
+    </style>
 </head>
 <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="./assets/media/logo.webp" width="60px" alt="Logo" class="rounded-circle me-2">
-                Tornei Sportivi
-            </a>
-            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
-                            CLASSIFICHE
-                        </a>
-                        <ul class="dropdown-menu dropdown-menu-dark">
-                            <li><a class="dropdown-item" href="./pages/calcetto.html">Calcio</a></li>
-                            <li><a class="dropdown-item" href="./pages/pallavolo.html">Pallavolo</a></li>
-                        </ul>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="./pages/contatti.html">CONTATTI</a>
-                    </li>
-                </ul>
-            </div>
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="./assets/media/logo.webp" width="50" alt="Logo" class="rounded-circle me-2">
+          Tornei Sportivi
+        </a>
+        <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                Classifiche
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item" href="./pages/calcetto.html">Calcio</a></li>
+                <li><a class="dropdown-item" href="./pages/pallavolo.html">Pallavolo</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/contatti.html">Contatti</a>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
 
     <!-- Hero Section -->
     <section class="hero-section">
-        <div class="container text-center">
-            <h1 class="display-4 mb-4">Benvenuto nel sito dei tornei sportivi del Fazzini Mercantini</h1>
-            <p class="lead mb-5">
-                In questo sito sono presenti tutte le informazioni quali calendario delle partite, 
-                squadre e classifiche di tutti i tornei sportivi del Fazzini Mercantini
-            </p>
-            <br>
-
-
-            <h2>TORNEO INIZIATO!</h2>
-
-            <a href="./pages/calcetto.html" class="btn btn-primary btn-lg">
-                CALCIO
-            </a>
-            
-            <a href="./pages/pallavolo.html" class="btn btn-primary btn-lg">
-                PALLAVOLO
-            </a>            
-            <br>
-            <a href="./pages/contatti.html" class="btn btn-primary btn-lg">
-                SVILUPPATORI
-            </a>
-
-
-
+      <div class="container text-center">
+        <h1 class="display-4 mb-4">Benvenuto nel sito dei tornei sportivi del Fazzini Mercantini</h1>
+        <p class="lead">
+          Qui troverai tutte le informazioni: calendario delle partite, squadre e classifiche 
+          di tutti i tornei sportivi del Fazzini Mercantini.
+        </p>
+        <h2 class="mb-4">Torneo Iniziato!</h2>
+        
+        <!-- Pulsanti principali -->
+        <div>
+          <a href="./pages/calcetto.html" class="btn btn-primary btn-lg">Calcio</a>
+          <a href="./pages/pallavolo.html" class="btn btn-primary btn-lg">Pallavolo</a>
+          <a href="./pages/contatti.html" class="btn btn-primary btn-lg">Sviluppatori</a>
         </div>
+      </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer text-center">
-        <div class="container">
-            <p class="mb-1"><strong>© 2025 Tornei Sportivi Fazzini Mercantini</strong></p>
-            <p class="mb-1"><strong>Contatti:</strong> Pietro Mozzoni & Daniele Colucci</p>
-            <p class="mb-1"><strong>Data di pubblicazione:</strong> 02/02/2024</p>
-            <p class="mb-0"><strong>Ultima revisione:</strong> 06/02/2024</p>
-        </div>
+      <div class="container">
+        <p class="mb-1"><strong>© 2025 Tornei Sportivi Fazzini Mercantini</strong></p>
+        <p class="mb-1"><strong>Contatti:</strong> Pietro Mozzoni &amp; Daniele Colucci</p>
+        <p class="mb-1"><strong>Data di pubblicazione:</strong> 23/02/2024</p>
+        <p class="mb-0"><strong>Ultima revisione:</strong> 23/02/2024</p>
+      </div>
     </footer>
 
     <!-- Bootstrap JS and Popper.js -->
