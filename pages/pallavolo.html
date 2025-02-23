@@ -144,8 +144,8 @@
         </thead>
         <tbody>
           <tr>
-            <td>5ATUR, 5CINF+3ALSS</td>
-            <td>1BCAT, 1LOGR+3ACAL</td>
+            <td>5ATUR, 5CINF+1ACAT, 3ALSU+3BLUS+3ALSS</td>
+            <td>1BCAT, 1LOGR+3ACAL, 4ATUR+4BTUR, 2ALSS+1BLSU</td>
           </tr>
         </tbody>
       </table>
@@ -219,7 +219,7 @@
     */
     const matches = [
       // 1^ Giornata
-      { id: 0, data: '7 Aprile 2025', ora: '14:30', team1: '5ATUR', team2: '5CINF+3ALSS', score1: 0, score2: 0 },
+      { id: 0, data: '7 Aprile 2025', ora: '14:30', team1: '5ATUR', team2: '5CINF+1ACAT', score1: 0, score2: 0 },
       { id: 1, data: '7 Aprile 2025', ora: '16:00', team1: '1BCAT', team2: '1LOGR+3ACAL', score1: 0, score2: 0 },
       // 2^ Giornata
       { id: 2, data: '28 Aprile 2025', ora: '14:45', team1: '5ATUR', team2: '1BCAT', score1: 0, score2: 0 },
@@ -234,9 +234,12 @@
     // Mappatura squadre->girone
     const teamGroups = {
       '5ATUR': '1',
-      '5CINF+3ALSS': '1',
+      '5CINF+1ACAT': '1',
+      '3ALSU+3BLUS+3ALSS': '1',
       '1BCAT': '2',
       '1LOGR+3ACAL': '2',
+      '4ATUR+4BTUR': '2',
+      '2ALSS+1BLSU': '2',
       // Semifinali/finali => Extra
       'Vinc. G1': 'Extra',
       'Vinc. G2': 'Extra',
